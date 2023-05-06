@@ -1,0 +1,49 @@
+* magnifier.nvim * A scope for telescope.nvim
+
+Author: Federico Santander
+
+==============================================================================
+CONTENTS                                                      *magnifier.nvim*
+
+  1. Introduction                                |magnifier.nvim.introduction|
+  2. Requirements                                |magnifier.nvim.requirements|
+  3. Install                                          |magnifier.nvim.install|
+  4. Usage                                              |magnifier.nvim.usage|
+  5. Motivation                                    |magnifier.nvim.motivation|
+
+==============================================================================
+1. INTRODUCTION                                 *magnifier.nvim.introduction*
+This plugin aims to have tools to narrow down monorepos that are too big to 
+just search with fd and you are too lazy to just download fzf.
+
+This would be per project/root
+
+2. REQUIREMENTS                                 *magnifier.nvim.requirements*
+
+- `telescope-nvim/telescope.nvim`
+- `nvim-tree/nvim-tree.lua`
+
+3. INSTALL                                           *magnifier.nvim.install*
+
+Install with your favourite package manager:
+
+```
+fsantand/magnifier.nvim
+```
+
+Then, add the setup to your plugins file
+
+4. USAGE                                               *magnifier.nvim.usage*
+
+Run the following commands
+
+- `:MagnifierAdd` : Adds a new directory to the monorepo scope
+- `:MagnifierRemove` : Removes a directory from the monorepo scope
+- `:MagnifierList` : Shows a loclist/qflist with all the currently set directories
+
+5. MOTIVATION                                     *magnifier.nvim.motivation*
+
+I have worked with monorepos all my life, but in my current job there are 
+this big ass monorepos that hog all the telescope extension I usually use
+to search for any given file. So I came up with the idea just to learn
+how to create plugins in vim, since I really love neovim

@@ -1,4 +1,4 @@
-* magnifier.nvim * A scope for telescope.nvim
+*magnifier.nvim* A scope for telescope.nvim
 
 Author: Federico Santander
 
@@ -12,7 +12,7 @@ CONTENTS                                                      *magnifier.nvim*
   5. Motivation                                    |magnifier.nvim.motivation|
 
 ==============================================================================
-1. INTRODUCTION                                 *magnifier.nvim.introduction*
+1. INTRODUCTION                                               *magnifier.nvim*
 This plugin aims to have tools to narrow down monorepos that are too big to 
 just search with fd and you are too lazy to just download fzf.
 

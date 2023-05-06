@@ -27,8 +27,12 @@ Then, add the setup to your plugins file
 Run the following commands
 
 - `:MagnifierAdd` : Adds a new directory to the monorepo scope
+- `:MagnifierRefresh` : Refreshes the current scoped workspace, in case it fails
+- `:MagnifierSet` : Adds a new directory to the monorepo scope
 - `:MagnifierRemove` : Removes a directory from the monorepo scope
 - `:MagnifierList` : Shows a loclist/qflist with all the currently set directories
+- `:MagnifierFindFiles` : Search for files in telescope with scoped dirs
+- `:MagnifierGrepFiles` : Run grep inside the scoped directories
 
 ## Motivation
 
@@ -36,3 +40,8 @@ I have worked with monorepos all my life, but in my current job there are this b
 monorepos that hog all the telescope extension I usually use to search for any given 
 file. So I came up with the idea just to learn how to create plugins in vim, since I
 really love neovim
+
+## To Do
+
+- [ ] Persist saved scopes (a la [workspaces.nvim](https://github.com/natecraddock/workspaces.nvim))
+- [ ] Add configuration options, since not everyone wants an augroup

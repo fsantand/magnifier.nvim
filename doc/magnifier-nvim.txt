@@ -1,9 +1,9 @@
-*magnifier.nvim* A scope for telescope.nvim
+A scope for telescope.nvim
 
 Author: Federico Santander
 
 ==============================================================================
-CONTENTS                                                      *magnifier.nvim*
+CONTENTS                                                                    
 
   1. Introduction                                |magnifier.nvim.introduction|
   2. Requirements                                |magnifier.nvim.requirements|
@@ -38,8 +38,13 @@ Then, add the setup to your plugins file
 Run the following commands
 
 - `:MagnifierAdd` : Adds a new directory to the monorepo scope
+- `:MagnifierRefresh` : Refreshes the current scoped workspace, in case it fails
+- `:MagnifierSet` : Adds a new directory to the monorepo scope
 - `:MagnifierRemove` : Removes a directory from the monorepo scope
 - `:MagnifierList` : Shows a loclist/qflist with all the currently set directories
+- `:MagnifierFindFiles` : Search for files in telescope with scoped dirs
+- `:MagnifierGrepFiles` : Run grep inside the scoped directories
+
 
 5. MOTIVATION                                     *magnifier.nvim.motivation*
 

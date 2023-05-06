@@ -6,11 +6,13 @@ end
 
 local pickers = require("telescope.pickers")
 local finders = require("telescope.finders")
+local conf = require("telescope.config").values
+
 local current_workspace = require("magnifier").current_workspace
 local current_dirs = require("magnifier").current_dirs()
 
 
-local magnifier_scope = function (opts)
+local magnifier = function (opts)
   opts = opts or require("telescope.themes").get_dropdown()
   pickers
     .new(opts, {
@@ -18,11 +20,12 @@ local magnifier_scope = function (opts)
       finder = finders.new_table({
         results = current_dirs
       }),
+      sorter = conf.file_sorter(opts),
   }):find()
 end
 
 return telescope.register_extension{
   exports = {
-    magnifier_scope = magnifier_scope
+    magnifier = magnifier,
   }
 }

@@ -28,7 +28,7 @@ local function add_to_current_dirs(prompt_bufnr)
   magnifier.scoped_workspaces[magnifier.current_workspace] = new_dirs_entries
 end
 
-local magnifier = function (opts)
+local magnifier_scope = function (opts)
   opts = opts or require("telescope.themes").get_cursor()
   local dirs = magnifier_utils.scan_dir(current_workspace)
   pickers
@@ -48,6 +48,6 @@ magnifier()
 
 return telescope.register_extension{
   exports = {
-    magnifier = magnifier,
+    magnifier = magnifier_scope
   }
 }
